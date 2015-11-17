@@ -23,19 +23,21 @@ width: 1062px;
 	background-image: linear-gradient(#5e5e5e, #444343);
 
 }
-ul.main_menu li {
+
+div.menu ul li {
 	display: inline;
+
 }
-div.menu li a {
+div.menu ul li a {
+	padding: 10px 40px 10px 40px;
 	color: #ffffff;
 	text-decoration: none;
 	font-size: 15pt;
-	margin: 0px;
-	padding: 10px 50px 10px 50px;
 }
-div.menu a:hover {
+div.menu ul li a:hover {
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
+	padding: 10px 39px 10px 39px;
 	background-image: linear-gradient(#4a4a4a, #2e2e2e);
 }
 div.left_menu {
@@ -46,18 +48,29 @@ div.left_menu {
 
 }
 div.left_menu ul li {
-	padding: 12px 290px 12px 20px;
+	width: 290px;
+    height: 40px;
 	border: 1px solid #c8c8c8;
-
+	border-bottom: none;
+	text-indent: 20px;
 }
-div.left_menu ul li a {
+div.left_menu ul li.left_menu_end {
+	border-bottom:  1px solid #c8c8c8;
+}
+div.left_menu ul li a { 
+	display: block;
+	width: 100%;
+    height: 100%;
+    padding: 12px 0px 12px 0px;
 	font-size: 14pt;
 	color: #656363;
 	text-decoration: none;
 	white-space: pre;
+
 }
-div.left_menu ul li a:hover {
-	margin-left: 10px;
+div.left_menu ul li:hover {
+	text-indent: 30px;
+	background-color: #f9f9f9;
 	color: #2c2c2c;
 
 }
