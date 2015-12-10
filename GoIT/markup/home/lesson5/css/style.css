@@ -1,0 +1,39 @@
+.header {
+	width: 100%;
+	height: 36px;
+	background-image: url(../img/header.png);
+	font-family: 'Tahoma', arial;
+}
+
+.right_menu li a {
+	float: right;
+	padding: 11px 10px;
+	font-size: 14px;
+	color: #ffffff;
+}
+.right_menu li:nth-child(1) {
+	margin-right: 20px;
+}
+.right_menu li a:hover {
+	background-image: linear-gradient(#51b1dc, #2e7ac4);
+	border: 1px solid #489bd5;
+	border-top: none;
+}
+
+.left_menu li a {
+	float: right;
+	padding: 11px 10px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #60b5ed;
+}
+.left_menu li a:hover {
+	background-color: #4eabda;
+	color: #ffffff;
+}
+.content {
+	height: 1080px;
+	width: 100%;
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+}

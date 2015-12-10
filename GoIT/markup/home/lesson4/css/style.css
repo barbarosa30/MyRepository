@@ -86,12 +86,14 @@ body {
 }
 
 .menu {
+	position: absolute;
 	background-image: linear-gradient(#373737, #303030);
 	height: 30px;
 	width: 999px;
 	font-size: 12px;
 	border-bottom: 1px solid #000000;
 	box-shadow: 0px 3px 3px -1px rgba(0,0,0,0.75);
+	z-index: 5;
 }
 .menu li {
 	float: left;
@@ -99,7 +101,6 @@ body {
 	width: 140px;
 	text-align: center;
 	position: relative;
-	padding-top: 10px;
 	}
 .menu li ul {
 	background-color: #303030;
@@ -114,14 +115,13 @@ body {
 	}
 .menu li ul li {
 	float: left;
-    top: -30px;
+    top: -26px;
     left: 10px;
-    height: 3px;
+    height: 25px;
 	width: 150px;
 	font-size: 12px;
 	text-align: left;
 	color: #ffffff;
-	padding-bottom: 10px;
 		}
 .menu li a {
 	display: block;
@@ -129,47 +129,71 @@ body {
 	height: 30px;
 	color: #fff;
 	text-decoration: none;
+	line-height: 29px;
 	}
 .menu li:hover ul, .menu li.jshover ul {
 	display: block;
-	}
+	animation: pulse 1s ease;
+}
 
+@keyframes pulse {
+  0% {
+   height: 0px;
+   opacity: 0;
+  }
+  100% {
+    height: 120px;
+    opacity: 1;
+  }
+}
+   
 .left_block {
-	float: left;
+	position: absolute;
+	top: 444px;
 	width: 210px;
-	height: 537px;
-	margin-top: -9px;
-	padding-top: 10px;
+	height: 547px;
 	border-right: 1px solid #c7cacf;
 	border-left: 1px solid #c7cacf;
 	background-color: #edeef0; 
-	box-shadow: inset 0px 3px 3px -1px rgba(0,0,0,0.75);
+	z-index: 1;
 }
 .right_block {
-	float: right;
+	position: absolute;
+	top: 444px;
+	left: 937px;
 	width: 210px;
-	height: 537px;
-	padding-top: 10px;
-	margin-top: -9px;
-	box-shadow: inset 0px 3px 3px -1px rgba(0,0,0,0.75);
+	height: 547px;
 	border-left: 1px solid #c7cacf;
 	border-right: 1px solid #c7cacf;
 	background-color: #edeef0; 
+	z-index: 1;
 }
 
 .left_block p, .right_block p {
 	font-size: 18px;
 	color: #424c43px;
 	text-align: center;
+	padding-top: 10px;
 }
 .left_block pre, .right_block pre {
 	color: #424c43;
 	text-align: center;
 	padding-top: 10px;
 }
+.menu li a span {
+	font-size: 7px;
+}
+.content {
+	position: absolute;
+	left: 366px;
+	top: 450px;
+	width: 580px;
+	height: 547px;
+}
 .foater p {
-	color: #ffffff;
+	position: absolute;
+	top: 1000px;
+	left: 551px;
+	color: #fff;
 	font-size: 12px;
-	margin: 10px 0px;
-	text-align: center;
 }
