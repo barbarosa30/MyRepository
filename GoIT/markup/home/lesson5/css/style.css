@@ -2,7 +2,7 @@
 	width: 100%;
 	height: 36px;
 	background-image: url(../img/header.png);
-	font-family: 'Tahoma', arial;
+	font-family: 'Tahoma', Arial, sans-serif;
 }
 
 .right_menu li a {
@@ -36,4 +36,26 @@
 	width: 100%;
 	background-image: url(../img/background.png);
 	background-repeat: no-repeat;
+}
+.register {
+	position: absolute;
+	top:247px;
+	left: 353px;
+	width: 560px;
+	height: 62px;
+	background-color:  rgba(0,0,0,0.6);
+}
+.register p {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
+.register_form {
+	position: absolute;
+	top:311px;
+	left: 353px;
+	height: 548px;
+	width: 560px;
+	background-color:  rgba(0,0,0,0.6);
 }
