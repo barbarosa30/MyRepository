@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body onload="captcha()"> 
+
+<script type="text/javascript">
+var a = Math.ceil(Math.random() * 10);
+var b = Math.ceil(Math.random() * 10);
+var c = a + b;
+
+function captcha(){
+    document.getElementById('text').innerHTML='Сколько будет ' + a + ' + ' + b + '?';
+}
+ 
+function checkCaptcha(){
+    var d = document.getElementById('captchaEdit').value;
+    if(d == c) {
+        alert('Правильный ответ!');
+    }
+    else {
+        alert('Неправильный ответ, попробуйте еще раз.')
+    }
+}
+</script>
+
+    <p id="text"></p>
+    <input type="text" id="captchaEdit" value="" />
+    <input type="submit" value="Отправить" onClick="checkCaptcha();" />
+</body> 
+</html>
